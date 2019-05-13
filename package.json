@@ -1,0 +1,22 @@
+{
+  "name": "angular_ur_movies_back_end",
+  "version": "1.0.0",
+  "description": "Angular_ur_movies_back_end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jenhaohsiao/Angular_ur_movies_back_end.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jenhaohsiao/Angular_ur_movies_back_end/issues"
+  },
+  "homepage": "https://github.com/Jenhaohsiao/Angular_ur_movies_back_end#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
