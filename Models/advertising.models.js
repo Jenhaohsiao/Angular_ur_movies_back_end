@@ -5,7 +5,7 @@ const advertisingSchema = new Schema({
 
     title: {
         type: String,
-        required: true,
+        // required: true,
         default: null
     },
 
@@ -17,12 +17,12 @@ const advertisingSchema = new Schema({
     },
     startDate: {
         type: Date,
-        required: true,
+        // required: true,
         default: new Date()
     },
     endDate: {
         type: Date,
-        required: true,
+        // required: true,
         default: null
 
     },

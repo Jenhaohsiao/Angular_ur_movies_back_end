@@ -48,7 +48,7 @@ router.route("/")
     });
 
 
-router.route("/:id")
+router.route("/:_id")
     .get(jsonParser, async function (req, res) {
         try {
             var ObjectById = await helper.getById(req);
@@ -74,7 +74,7 @@ router.route("/:id")
         } catch (err) {
 
             res.status(409).send({
-                message: err.message
+                message: err
             });
             return;
         }
@@ -90,7 +90,7 @@ router.route("/:id")
         } catch (err) {
 
             res.status(409).send({
-                message: err.message
+                message: err
             });
             return;
         }
