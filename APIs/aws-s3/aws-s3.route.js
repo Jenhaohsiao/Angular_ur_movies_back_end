@@ -4,9 +4,11 @@ const bodyParser = require('body-parser');
 const jsonParser = bodyParser.json();
 const helper = require('./aws-s3.helper')
 const singleUpload = helper.upload.single('image')
+const multipart = require('connect-multiparty');
+const multipartMiddleware = multipart();
 
 
-router.post('/image-upload', function (req, res) {
+router.post('/image-upload', multipartMiddleware, function (req, res) {
     singleUpload(req, res, function (err, some) {
         if (err) {
             return res.status(422).send({
