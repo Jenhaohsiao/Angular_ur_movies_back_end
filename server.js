@@ -28,4 +28,5 @@ app.use('/', dbConnecter);
 //When server connect to mongoDB -end
 
 app.use('/api', api.router); // When you use Root API
-app.use('/api/advertising', api.advertising); // When you use authorize API
+app.use('/api/advertisings', api.advertisings); // When you use authorize API
+app.use('/api/s3', api.s3); // When you use AWS S3 API

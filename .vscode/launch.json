@@ -8,5 +8,12 @@
         "request": "launch",
         "name": "Launch Program",
         "program": "${workspaceRoot}/server.js",
+        "env": {
+            "AWS_ACCESS_KEY_ID": "AKIAJOCPI2HKX5FQ22LQ",
+            "AWS_SECRET_ACCESS_KEY": "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",
+            "AWS_S3_BASE_URL": "https://s3.amazonaws.com/",
+            "isDebug": "false",
+
+        }
     }]
 }

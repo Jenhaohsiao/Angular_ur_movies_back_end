@@ -1,6 +1,5 @@
 const Advertising = require('../../Models/advertising.models');
 
-
 function init(req) {
     return new Promise(async function (resolve, reject) {
 
