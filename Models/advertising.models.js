@@ -3,36 +3,42 @@ const Schema = mongoose.Schema;
 
 const advertisingSchema = new Schema({
 
+
+    name: {
+        type: String,
+        default: null
+    },
+
     title: {
         type: String,
-        // required: true,
         default: null
     },
 
     description: {
         type: String,
-        // required: true,
         default: null
 
     },
     startDate: {
         type: Date,
-        // required: true,
         default: new Date()
     },
     endDate: {
         type: Date,
-        // required: true,
         default: null
 
     },
-    image: {
+    imageUrl: {
+        type: String,
+        default: "http://fakeimg.pl/200x150/?text=No Image"
+    },
+
+    linkUrl: {
         type: String,
         default: null
-
     },
 
-})
+});
 
 
 

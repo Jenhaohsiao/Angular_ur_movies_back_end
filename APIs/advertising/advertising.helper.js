@@ -17,13 +17,16 @@ function create(req) {
     return new Promise(async function (resolve, reject) {
         try {
             var Model = new Advertising();
-            var _body = req.body;
+            var body = req.body;
+            delete body._id;
             if (Model) {
-                // object.username = body.username;
-                // object.verify = passHash;
 
                 var object = Model;
-                object.title = _body.title;
+                if (body) {
+                    for (var prop in body) {
+                        object[prop] = body[prop];
+                    }
+                }
                 var result = await object.save();
                 resolve(result);
 
