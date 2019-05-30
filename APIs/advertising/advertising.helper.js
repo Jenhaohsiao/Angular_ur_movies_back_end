@@ -43,7 +43,10 @@ function getAll(req) {
     return new Promise(async function (resolve, reject) {
         try {
 
-            var objeects = await Advertising.find()
+            var objeects = await Advertising.find().
+            sort('-updated_at')
+
+
             resolve(objeects);
         } catch (err) {
             reject('API "get all" err:', err);
