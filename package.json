@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Jenhaohsiao/Angular_ur_movies_back_end#readme",
   "dependencies": {
-    "aws-sdk": "^2.459.0",
+    "aws-sdk": "^2.814.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.16.4",
